@@ -60,7 +60,7 @@ li {
 
 .info {
     float: left;
-    padding-left: 120px;
+    padding-left: 80px;
     display: inline-block;
 }
 
@@ -313,26 +313,43 @@ nav > ul > li {
 
 .fotoblok1{
     border: 0;
+    background-color: #000000;
+
    }
 
+
+
 .fotoblok11 {
-    background: #000000;
     float: left;
     width: 50%;
     position: relative;
+
 }
 
 .fotobloctext{
     position: absolute;
-       top: 50px;
-    left: 50px;
+    top: 35%;
+    left: 15%;
+    padding-right: 15%;
    }
 
 .fotoblok12 {
     float: left;
     width: 50%;
-    background: #000000;
+    position: relative;
+   }
+
+.fb2{
+    position: absolute;
+    top: 35%;
+    left: 63%;
     }
+
+.fb3{
+    position: absolute;
+    top: 35%;
+    left: 17%;
+}
 
 .prducts {
     font-size: 30px;
@@ -353,9 +370,8 @@ nav > ul > li {
 
 .grafinfo {
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 110px;
-}
+    padding: 50px 10px 110px 10px;
+    }
 
 .grafinfo1 {
     width: 33.33%;
@@ -375,6 +391,7 @@ nav > ul > li {
     font-family: "Hind";
     color: #000000;
     line-height: 1.667;
+    margin: 0 10px 0 10px;
 }
 
 .ups {
@@ -402,81 +419,18 @@ nav > ul > li {
 .fotolinebloc {
     float: left;
     width: 20%;
-}
-
-
-.botmenu {
-    background-color: #bd2631;
-    padding: 0 100px;
-    margin-top: -6px; 
-    }
-
-.botmenu-mob{
-    background-color: #bd2631;
-    display: none;
-    padding: 0 10%;
-    margin-top: -6px;
-    float: left;
     font-size: 18px;
     font-family: "Hind";
     color: rgb(255, 255, 255);
     font-weight: bold;
-    line-height: 1.667;
-    width: 80%;
-    text-align: left;
-}
-
-.botmenu-mob a{
-    color: white;
-}
-
-.botmenu-mob a:hover{
-    background-color: #000000;
-    color:rgb(255, 255, 255);
-}
-
-.botmenu nav {
-    float: left;
-    display: inline-block;
-    font-size: 18px;
-    font-family: "Hind";
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    line-height: 1.667;
-    width: 100%;
+    line-height: 1;
     text-align: center;
+    padding-bottom: 20px;
 }
 
-.botmenu-mob nav {
-    float: left;
-    display: inline-block;
-    font-size: 18px;
-    font-family: "Hind";
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    line-height: 1.667;
-    width: 100%;
-    text-align: left;
+.ftoline{
+    background-color: #bd2631;
 }
-
-.botmenu li a {
-      width: 100%;
-}
-
-.botmenu li ul {
-   width: 100%
-}
-
-.botmenu nav li a:hover {
-    background-color: #000000;
-    color:rgb(255, 255, 255);
-}
-
-.botmenu-mob nav a:hover {
-    background-color: #000000;
-    color:rgb(255, 255, 255);;
-}
-
 
 .ftoline2 {
     padding-top: 70px;
@@ -489,17 +443,47 @@ nav > ul > li {
     text-align: center;
 }
 
+.footer{
+    background-color:#242424;
+}
+
 .textfoo {
-    padding: 70px 170px 70px 170px;
+    padding: 70px 7% 70px 7%;
     background-color: #363636;
+    display: inline-block;
 }
 
 .textfoo2 {
     float: left;
-    width: 23%;
+    width: 18.5%;
     text-align: center;
-    margin-right: 5px;
-    margin-left: 5px;
+    padding-right: 3%;
+    padding-left: 3%;
+    border-right: 1px solid #747474;
+   }
+
+.textfoo6 {
+    float: left;
+    width: 18.5%;
+    text-align: center;
+    padding-right: 3%;
+    padding-left: 3%;
+    border-left: 1px solid #747474;
+}
+
+.textfoo7 {
+    float: left;
+    width: 18.5%;
+    text-align: center;
+    padding-right: 3%;
+    padding-left: 3%;
+   }
+.textfoo8 {
+    float: left;
+    width: 18.5%;
+    text-align: center;
+    padding-right: 3%;
+    padding-left: 3%;
 }
 
 .textfoo3 {
@@ -527,7 +511,7 @@ nav > ul > li {
 
 .end {
     background-color: #242424;
-    padding: 40px 170px 30px 170px;
+    padding: 40px 12% 30px 10%;
 }
 
 .endtext {
@@ -537,6 +521,7 @@ nav > ul > li {
     color: rgb(255, 255, 255);
     line-height: 2.5;
     text-align: left;
+
 }
 
 .endtext1 {
@@ -549,9 +534,18 @@ nav > ul > li {
 }
 
                                                                                         /* Респонсив */
-@media screen and (max-width: 1250px) {
-    .textfoo {
-        padding: 70px 50px 70px 50px;
+@media screen and (max-width: 1200px) {
+    .upslogo{
+        padding-left: 120px;
+    }
+    .fbm{
+        width: 96%;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .fbm{
+        width: 90%;
     }
 }
 
@@ -559,21 +553,25 @@ nav > ul > li {
     .upslogo{
         padding-left: 100px;
     }
-
-    .botmenu {
-    padding: 0 50px;
+    .fotobloctext{
+        position: absolute;
+        top: 25%;
+        left: 12%;
+        padding-right: 12%;
     }
+
 }
 
 @media screen and (max-width: 1060px) {
     .logo, .static-info {
         float: none;
     }
-
     .logosecsion {
         text-align: center;
     }
-
+    .fbm{
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 1030px) {
@@ -589,23 +587,23 @@ nav > ul > li {
 }
 
 @media screen and (max-width: 960px) {
-    .end{
-        padding: 40px 30px 30px 30px;
-    }
     .menu {
     padding: 0 50px;
     }
-
+    .fbm{
+        width: 75%;
+    }
+    .grafinfo {
+        padding: 30px 10px 30px 10px;
+    }
 }
 
 @media screen and (max-width: 900px){
     .icon {
         padding-right: 20px;
     }
-    .botmenu {
-    padding: 0 20px;
-    }
-}
+
+  }
 
 @media screen and (max-width: 860px) {
     .menu {
@@ -614,26 +612,30 @@ nav > ul > li {
     .upslogo{
         padding-left: 40px;
     }
-    .botmenu {
-        padding: 0 20px;
+    .fotobloctext{
+        position: absolute;
+        top: 20%;
+        left: 12%;
+        padding-right: 12%;
+    }
+    .fbm{
+        width: 70%;
+    }
+    .textfoo2, .textfoo6, .textfoo7, .textfoo8{
+        width: 94%;
+        border: 0;
+        padding-top: 10px;
     }
 }
 
 @media screen and (max-width: 840px) {
-    .botmenu {
-        display: none;
-    }
-    .botmenu-mob{
-        display: inline;
-    }
     .adresbloc {
         height: auto;
     }
-    .icon {
-        float: left;
-        display: inline-block;
-        padding-left: 135px;
-        padding-top: 0;
+    .adres{
+        float: none;
+        padding-top: 70px;
+        padding-left: 0;
     }
 }
 
@@ -647,10 +649,12 @@ nav > ul > li {
            }
     .fotolinebloc2{
         width: 33.33%;
-           }
-    .textfoo2 {
-        width: 48%;
-        padding-bottom: 20px;
+    }
+    .fbm{
+        width: 65%;
+    }
+    .endtext1, .endtext{
+        float: none;
     }
 }
 
@@ -690,29 +694,30 @@ nav > ul > li {
         background-position: right;
         background-size: auto 100%;
     }
-    .textfoo2{
-        width: 45%;
+    .fotobloctext{
+        position: absolute;
+        top: 12%;
+        left: 12%;
+        padding-right: 12%;
     }
+
 }
 @media screen and (max-width: 760px) {
    .batery{
        padding-left: 10px;
    }
-    .fotobloctext{
-        position: absolute;
-        top: 20px;
-        left: 20px;
+    .fotolinebloc{
+        width: 33.3%;
     }
 
 }
 @media screen and (max-width: 720px) {
-        .textfoo2{
-        width: 95%;
-    }
+
     .logosecsion {
         padding-left: 20px;
         padding-right: 20px;
-            }
+    }
+
 }
 @media screen and (max-width: 680px) {
     .bigphoto {
@@ -722,35 +727,23 @@ nav > ul > li {
     .batery{
         padding-left: 20px;
     }
-    .endtext1{
-        float: left;
-    }
+
     .fotoblok11, .fotoblok12{
+        width: 100%;
+    }
+    .fbm{
         width: 100%;
     }
     .fotobloctext{
         position: absolute;
-        top: 100px;
-        left: 100px;
+        top: 20%;
+        left: 20%;
+        padding-right: 12%;
     }
 }
 
 @media screen and (max-width: 620px) {
-    .phone {
-        padding-top: 0;
-    }
 
-    .bigphoto {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-
-    .angler1 {
-        padding-top: 0;
-        padding-bottom: 35px;
-    }
-}
-@media screen and (max-width: 560px) {
     .static-info ul li{
         display: block;
         padding-right: 0;
@@ -759,12 +752,33 @@ nav > ul > li {
         width: 200px;
         text-align: left;
     }
-    .bigphoto{
-        padding-top: 0;
-        padding-bottom: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .batery {
+        float: none;
+        padding-left: 60px;
+    }
+    .angler1{
+        float: left;
     }
 }
-@media screen and (max-width: 510px) {
+
+@media screen and (max-width: 560px) {
+    .bigphoto{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .angler1{
+        padding-top: 0;
+    }
+    .grafinfo1{
+        width: 95%;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 520px) {
     .fotolinebloc2{
         width: 50%;
         text-align: center;
@@ -773,22 +787,33 @@ nav > ul > li {
         padding-top: 40px;
         padding-bottom: 25px;
     }
-    .fotobloctext{
-        position: absolute;
-        top: 20px;
-        left: 20px;
-    }
     .upstext{
         padding-bottom: 5px;
     }
-}
-@media screen and (max-width: 440px) {
     .phone{
-        padding-top: 12px;
+        float: none;
+        padding-top: 60px;
+        padding-left: 0;
+    }
+    .adres{
+        padding-top: 10px;
+
+    }
+    .fbm{
+        width: 80%;
     }
     .icon{
-        padding-left: 12px;
+        padding-right: 0;
     }
+    .info{
+        width: 50%;
+    }
+    .fotolinebloc{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 440px) {
+
     .grafinfo1 {
         width: 100%;
         float: inherit;
@@ -800,16 +825,36 @@ nav > ul > li {
     .ups {
        background-size: auto 100%;
     }
-}
-@media screen and (max-width: 440px) {
+
     .fotolinebloc2{
         width: 100%;
         float: inherit;
         text-align: center;
     }
+
+}
+
+@media screen and (max-width: 400px) {
+    .fotolinebloc{
+        width: 100%;
+    }
+        .icon ul li {
+            margin-left: 5px;
+    }
+    .fbm{
+        width: 60%;
+    }
+    .info{
+        width: 60%;
+    }
     .fotobloctext{
         position: absolute;
-        top: 10px;
-        left: 10px;
+        top: 5%;
+        left: 5%;
+        padding-right: 5%;
+    }
+    .bigphoto{
+        padding-top: 3px;
+        padding-bottom: 3px;
     }
 }
